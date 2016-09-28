@@ -9,9 +9,9 @@
 
 ### Integrantes del equipo
 
-* XXXX
-* XXXX
-* XXXX
+* Terraza Rodrigo Gabriel
+* Ponce Brian Nicolás
+* Misael Zurdo
 * XXXX
 
 ## Sobre la tecnología
