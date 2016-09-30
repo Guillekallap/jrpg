@@ -12,7 +12,7 @@
 * Terraza Rodrigo Gabriel
 * Ponce Brian Nicolás
 * Misael Zurdo
-* XXXX
+* Callapiña Lopez, Juan Guillermo
 
 ## Sobre la tecnología
 
