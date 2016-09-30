@@ -9,10 +9,10 @@
 
 ### Integrantes del equipo
 
-* XXXX
-* XXXX
-* XXXX
-* XXXX
+* Terraza Rodrigo Gabriel
+* Ponce Brian Nicolás
+* Misael Zurdo
+* Callapiña Lopez, Juan Guillermo
 
 ## Sobre la tecnología
 
