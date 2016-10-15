@@ -1,4 +1,4 @@
-# [Nombre del juego]
+# Another Generic JRPG
 
 ## Sobre las personas
 
