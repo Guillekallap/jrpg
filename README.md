@@ -9,10 +9,10 @@
 
 ### Integrantes del equipo
 
-* Terraza Rodrigo Gabriel
-* Ponce Brian Nicolás
-* Misael Zurdo
-* Callapiña Lopez, Juan Guillermo
+* Terraza Rodrigo Gabriel ([RodTerra](https://github.com/RodTerra))
+* Ponce Brian Nicolás ([bnicolas6](https://github.com/bnicolas6))
+* Misael Zurdo ([MisaZ10](https://github.com/MisaZ10))
+* Callapiña Lopez, Juan Guillermo ([Guillekallap](https://github.com/Guillekallap))
 
 ## Sobre la tecnología
 
