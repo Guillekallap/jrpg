@@ -21,6 +21,12 @@
 * Java 1.7
 * JUnit 4
 
+## Historia y Temática
+
+En un mundo inusual en la Tierra Media de Azarath, donde las razas mas extrañas jamas vistas conviven, los guerreros elfos, orcos y humanos se entrenan para poder obtener el puesto de soldado para la Reina Amidala de Naboo.
+
+Juego JRPG clasico por turnos con temática medieval, donde el jugador podra elegirse una de las 3 razas y combatir contra otros jugadores y npcs.
+
 ## Sobre el proyecto
 
 Este workspace está compuesto por un conjunto de proyectos específicos. Las entregas deberán realizarse dentro del proyecto correspondiente, o si fuera necesario, dentro de un proyecto adicional que podrán crear para tal fin.  
