@@ -11,7 +11,7 @@ public abstract class Personaje implements Atacable {
 	protected int ataque;
 	protected int defensa;
 	protected int velocidad;
-	
+	protected Casta casta;
 	
 
 	public final void atacar(Atacable atacado) {

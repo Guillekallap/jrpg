@@ -16,17 +16,16 @@ public class Elfo extends Personaje {
 
 	@Override
 	public int obtenerPuntosDeDefensa() {
-		return this.defensa;
+		return this.defensa+casta.getDefensa();
 	}
 
 	@Override
 	protected int calcularPuntosDeAtaque() {
 
-		return this.ataque;
+		return this.ataque+casta.getAtaque();
 	}
-
 	@Override
-	public int obtenerPuntosDeVelocidad() {
-		return this.velocidad;
+	public int obtenerPuntosDeVelocidad(){
+		return this.velocidad+casta.getVelocidad();
 	}
 }

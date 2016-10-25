@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import items.BotaDeBronce;
+import items.EspadaBastarda;
 import items.EspadaDobleFilo;
 import personajes.Humano;
 import personajes.Personaje;
@@ -34,7 +35,13 @@ public class ItemTest {
 		pepe = new EspadaDobleFilo(pepe);
 		Assert.assertEquals(10 + 15, pepe.obtenerPuntosDeAtaque());
 		// agrego otra espada
-		pepe = new EspadaDobleFilo(pepe);
+		pepe = new EspadaBastarda(pepe);
 		Assert.assertEquals(10 + 15 + 15, pepe.obtenerPuntosDeAtaque());
+		pepe = new EspadaDobleFilo(pepe);
+		Assert.assertEquals(10 + 15 + 15 + 20, pepe.obtenerPuntosDeAtaque());
+
+	}
+	public void probarCasta(){
+		
 	}
 }
