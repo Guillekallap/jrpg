@@ -12,6 +12,6 @@ public class EspadaLarga extends Espada{
 	
 	@Override
 	public int obtenerPuntosDeAtaque(){
-		return obtenerPuntosDeAtaque()+ataque;
+		return super.obtenerPuntosDeAtaque()+ataque;
 	}
 }

@@ -1,4 +1,4 @@
-package items;
+ package items;
 
 import personajes.Personaje;
 
@@ -11,6 +11,6 @@ public class EspadaDobleFilo extends Espada{
 	
 	@Override
 	public int obtenerPuntosDeAtaque(){
-		return obtenerPuntosDeAtaque()+ataque;
+		return super.obtenerPuntosDeAtaque()+ataque;
 	}
 }

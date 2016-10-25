@@ -23,8 +23,9 @@ public class ItemTest {
 		Assert.assertEquals(5 + 10, pepe.obtenerPuntosDeVelocidad());
 
 	}
-
-	public void agregoEspadaAndBota() {
+	
+	@Test
+	public void agregoEspadaYBota() {
 		Personaje pepe = new Humano();
 		// Le agrego una bota
 		pepe = new BotaDeBronce(pepe);
@@ -33,15 +34,14 @@ public class ItemTest {
 
 		// agrego espada
 		pepe = new EspadaDobleFilo(pepe);
+		System.out.println(pepe.obtenerPuntosDeAtaque());
 		Assert.assertEquals(10 + 15, pepe.obtenerPuntosDeAtaque());
+		
 		// agrego otra espada
 		pepe = new EspadaBastarda(pepe);
-		Assert.assertEquals(10 + 15 + 15, pepe.obtenerPuntosDeAtaque());
-		pepe = new EspadaDobleFilo(pepe);
-		Assert.assertEquals(10 + 15 + 15 + 20, pepe.obtenerPuntosDeAtaque());
+		Assert.assertEquals(10 + 15 + 20, pepe.obtenerPuntosDeAtaque());
+		
 
 	}
-	public void probarCasta(){
-		
-	}
+	
 }

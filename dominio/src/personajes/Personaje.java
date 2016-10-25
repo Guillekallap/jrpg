@@ -4,15 +4,17 @@ public abstract class Personaje implements Atacable {
 
 	protected int energia = 100;
 	protected int salud = 100;
-	
+
 	protected int energiaMax = 100;
 	protected int saludMax = 100;
-	
+
 	protected int ataque;
 	protected int defensa;
 	protected int velocidad;
-	protected Casta casta;
-	
+
+	protected Casta casta=null;
+	protected final int guerrero = 0;
+	protected final int asesino = 1;
 
 	public final void atacar(Atacable atacado) {
 		if (puedeAtacar()) {
@@ -35,9 +37,11 @@ public abstract class Personaje implements Atacable {
 	}
 
 	protected abstract boolean puedeAtacar();
-	
+
 	public abstract int obtenerPuntosDeDefensa();
+
 	public abstract int obtenerPuntosDeVelocidad();
+
 	protected abstract int calcularPuntosDeAtaque();
 
 	public void serCurado() {
@@ -55,4 +59,8 @@ public abstract class Personaje implements Atacable {
 	public int obtenerPuntosDeAtaque() {
 		return calcularPuntosDeAtaque();
 	}
+	public void setCasta(Casta casta){
+		this.casta = casta;
+	}
+
 }

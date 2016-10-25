@@ -5,7 +5,7 @@ public class Humano extends Personaje {
 	public Humano() {
 		this.ataque = 10;
 		this.defensa = 10;
-		this.velocidad=5;
+		this.velocidad = 5;
 	}
 
 	@Override
@@ -16,17 +16,27 @@ public class Humano extends Personaje {
 
 	@Override
 	public int obtenerPuntosDeDefensa() {
-		return this.defensa+casta.getDefensa();
+		if (this.casta != null)
+			return this.defensa + casta.getDefensa();
+		else
+			return this.defensa;
 	}
 
 	@Override
 	protected int calcularPuntosDeAtaque() {
-
-		return this.ataque+casta.getAtaque();
+			
+		if (this.casta != null)
+			return this.ataque + casta.getAtaque();
+		else
+			return this.ataque;
 	}
+
 	@Override
-	public int obtenerPuntosDeVelocidad(){
-		return this.velocidad+casta.getVelocidad();
+	public int obtenerPuntosDeVelocidad() {
+		if (this.casta != null)
+			return this.velocidad + casta.getVelocidad();
+		else
+			return this.velocidad;
 	}
 
 }
