@@ -1,85 +1,257 @@
 #Historias de Usuario y Criterios de aceptación
 
-####000-Como cliente,al entrar a la aplicación quiero ver el estado del servidor.
-Criterio de aceptación:
-* El usuario ve claramente con un mensaje de que dice Estado: “Conectado” o “Desconectado”.
 
-####001-Como jugador, quiero ingresar al juego.
-Criterio de aceptación:
-* El jugador ingresado, se crea un Alias.
 
-####002-Como jugador, quiero crear mi personaje, editando sus características principales (como raza y clase) para verme reflejado en él.
-Criterio de aceptación:
-* El jugador debe poder seleccionar una raza y una clase dentro del menu de creacion de personaje.
+####000-
 
-####003-Como jugador, quiero ingresar a un mundo para adquirir experiencia, items, y habilidades nuevas.
-Criterio de aceptación:
-* El jugador, tiene la posibilidad de mejorar las capacidades de su personaje a lo largo del mundo.
+HU
 
-####004-Como jugador, quiero eliminar enemigos para aumentar mi experiencia.
-Criterio de aceptación:
-* El jugador, al combatir contra otros, podrá ganar experiencia solo si lo derrota.
+Como jugador, 
+quiero poder crearme un alias,
+para poder dar personalidad al personaje y distinguirme del resto de jugadores.
 
-####005-Como jugador, quiero acumular experiencia para poder subir de nivel.
-Criterio de aceptación:
-* El jugador, al acumular cierta cantidad de experiencia con su avatar que se consigue a través de combates, podrá subir de nivel.
+CA
 
-####006-Como jugador, quiero adquirir, cada cierto nivel nuevo, una nueva habilidad.
-Criterio de aceptación:
-+ El jugador al subir un nivel podrá adquirir un punto para aprender una habilidad nueva.
+Dado un jugador,
+cuando me asigno un alias,
+entonces debe aparecer en el juego.
 
-####007-Como jugador, quiero mejorar las habilidades que poseo al subir de nivel.
-Criterio de aceptación:
-* El jugador al subir un nivel podrá adquirir un punto para mejorar una existente.
+####001-
 
-####008-Como jugador, cuando subo de nivel, quiero mejorar mis estadisticas base: ataque, energia, defensa, vida y velocidad. 
-Criterio de aceptación:
-* El jugador al subir de nivel podrá obtener la opción de mejorar alguna de sus estadísticas que serán de manera permanente hasta que termine el juego.
+HU
 
-####009-Como jugador, puedo conocer las características de mi personaje en todo momento, como son: la vida, la energía,etc.
-Criterio de aceptación:
-* El jugador podrá visualizar las características de su personaje (vida, energía, ataque, etc...) y cuando ésta se ve aumentada o decrementada en el combate. 
+Como jugador, 
+quiero crear mi personaje editando sus características principales (como raza y clase) ,
+para poder personalizar mi estilo de juego.
 
-####010-Como jugador, puedo conocer el estado de la vida del enemigo con el que estoy combatiendo.
-Criterio de aceptación:
-* El jugador, durante el combate puede observar la vida del enemigo y cuando ésta se ve aumentada o decrementada.
+CA
 
-####011-Como jugador, quiero ver el daño que le ejerzo a mi enemigo.
-Criterio de aceptación:
-* Cada vez que el jugador ataca al enemigo, puede observar la cantidad de daño ejercida.
+dado un jugador,
+cuando elijo mi raza y casta,
+entonces mis atributos y habilidades son las de la raza elegida.
 
-####012-Como jugador, quiero que una batalla se concrete hasta el final sin interrupciones.
-Criterio de aceptación:
-* El jugador y sus enemigos se transportan al escenario de batalla, y una vez finalizada vuelven al Mapa.
+####002-
 
-####013-Como jugador, quiero encontrarme con otros jugadores en el mismo mundo para aliarse a ellos o combatir contra ellos.
-Criterio de aceptación:
-* Cada jugador puede encontrar a otros en el mundo y ejercer acciones sobre ellos como pedir alianza y/o atacar .
+HU
 
-####014-Como jugador, quiero aliarme con otro jugador para combatir junto a él.
-Criterio de aceptación:
-* Al recurrir a una alianza, la ganancia de experiencia sufre una penalización.
+Como jugador, 
+quiero eliminar enemigos,
+para aumentar mi experiencia.
 
-####015-Como jugador, quiero cambiar las alianzas establecidas cada cierta cantidad de tiempo para poder traicionar a mis aliados.
-Criterio de aceptación:
-* El juego dispondrá de un tiempo fijado en el cual los usuarios podrán cambiar sus alianzas, ésta es la única manera y se puede repetir a lo largo del juego.
+CA
 
-####016-Como jugador quiero tener un sector con enemigos cercanos a mi nivel.
-Criterio de aceptación:
-*El mapa contará con zonas diferenciadas por niveles, en las cuales, cada una está ocupada por monstruos de  niveles de determinado rango.
+Dado un jugador y un enemigo(puede ser jugador o npc),
+cuando el jugador elimina al enemigo,
+entoces aumenta su experiencia.
 
-####017-Como jugador, puedo atacar a las criaturas neutrales.
-Criterio de aceptación:
-* Al atacar a una criatura neutral, ella también me ataca.
+####003-
 
-####018-Como jugador, puedo salir del juego.
-Criterio de aceptación:
-* El usuario tendrá la opción de salir del juego a través de una opción.
+HU
 
-####019-Como jugador, puedo salir del servidor.
-Criterio de aceptación:
-*El usuario tendrá la opción de salir del servidor a través de una opción .
+Como jugador, 
+quiero acumular experiencia,
+para poder subir de nivel.
 
-####020-Como jugador puedo morir.
-Criterio de aceptación:
-* Cuando muero, puedo revivir.
+CA
+
+dado un jugador y su experiencia,
+cuando obtengo mas experiencia,
+entonces esta se acumula con la que tengo actualmente para que cuando tenga la necesaria, suba de nivel.
+
+####004-
+
+HU
+
+Como jugador, 
+quiero adquirir cada cierto nivel nuevo,
+una nueva habilidad.
+
+CA
+
+Dado un jugador,
+cuando este sube a un nivel especifico,
+entonces el jugador obtiene una nueva habilidad.
+
+####005-
+
+HU
+
+Como jugador, 
+quiero aumentar mis habilidades al subir de nivel,
+para tener mas formas de ataque.
+
+CA
+
+Dado un jugador y sus habilidades,
+cuando sube de nivel,
+entonces puedo mejorar/aumentar las habilidades.
+####006-
+
+HU
+
+Como jugador, 
+quiero mejorar mis estadisticas base: ataque, energia, defensa, vida y velocidad cuando subo de nivel, 
+para poder ser mas poderoso.
+
+CA
+
+Dado un jugador y sus atributos,
+cuando mejora sus atributos,
+entonces se ven reflejadas las mejoras durante la batalla.
+
+####007-
+
+HU
+
+Como jugador,
+quiero conocer las características de mi personaje, como son: la vida, la energía,etc,
+para poder conocer mi estado.
+
+CA
+
+Dado un jugador,
+cuando accede a la pantalla de estado,
+entonces puedo ver mis tributos y habilidades.
+
+####008-
+
+HU
+
+Como jugador, 
+quiero conocer el estado de la vida del enemigo,
+para conocer el estado del enemigo.
+
+CA
+
+Dado un jugador y un enemigo,
+cuando el jugador esta en el mundo del juego y en una batalla,
+entonces se muestra el estado del enemigo para dar informacion al jugador.
+
+####009-
+
+HU
+
+Como jugador, 
+quiero ver el daño que le ejerzo a mi enemigo,
+para ver la efectibilidad de mi ataque.
+
+CA
+
+Dado un jugador y un enemigo,
+cuando el jugador ataca al enemigo,
+entonce se muestra el daño recibido por el enemigo.
+
+####010-
+
+HU
+
+Como jugador, 
+quiero poder usar "escapar",
+para salir de un combate.
+
+CA
+
+Dado un jugador y un combate,
+cuando selecciono la opcion de escapar,
+entonces el jugador escapara del combate.
+
+####011-
+
+HU
+
+Como jugador, 
+quiero encontrarme con otros jugadores ,
+para aliarme a ellos o combatir contra ellos.
+
+CA
+
+dado un jugador y otros jugadores,
+cuando el jugador se encuentra con otros jugadores,
+enonces este puede enfrentarlos o aliarse con ellos.
+
+####012-
+
+HU
+
+Como jugador, 
+quiero poder salir de la alianza,
+para poder combatir contra los jugadores de la alianza.
+
+CA
+
+Dado un jugador y una alianza,
+cuando salgo de la alianza,
+entonces puedo combatir contra los integrantes de la alianza.
+
+
+####013-
+
+HU
+
+Como jugador,
+quiero tener un sector con enemigos cercanos a mi nivel,
+para levelear rápido .
+
+CA
+
+dado un jugador y el mapa del juego,
+cuando comienzo la partida,
+entonces existe un sector cercano con enemigos de nivel similar para poder levelear rapido.
+
+####014-
+
+HU
+
+Como jugador, 
+quiero eliminar a NPC,
+para adquirir experiencia.
+
+CA
+
+Dado un jugador y un npc,
+cuando el jugador elimina al npc,
+entonces el jugador adquiere experiencia.
+
+####015-
+
+HU
+
+Como jugador, 
+quiero poder ser vencido,
+para poder ser eliminado del juego.
+
+CA
+
+Dado un jugador,
+cuando este es vencido,
+entonces debe ser eliminado del juego.
+
+####016
+
+HU
+
+Como jugador,
+quiero poder respawnear al estar muerto, 
+para seguir jundo al juego.
+
+CA
+
+Dado un jugador,
+cuando estoy muerto y respawneo,
+entonces vuelvo al juego.
+
+####017
+
+HU
+
+Como jugador,
+quiero poder equiparme items,
+para mejorar mis atributos.
+
+CA
+
+Dado un jugador y un item,
+cuando este se equipa el item,
+entonces mejora sus atributos.
+
+
