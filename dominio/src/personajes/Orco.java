@@ -1,11 +1,17 @@
 package personajes;
 
+
+
+
 public class Orco extends Personaje {
 
-	public Orco() {
+	
+
+	public Orco(String nom) {
 		this.ataque = 15;
 		this.defensa = 10;
 		this.velocidad = 2;
+		nombre =nom;
 	}
 
 	@Override
@@ -37,5 +43,6 @@ public class Orco extends Personaje {
 		else
 			return this.velocidad;
 	}
+
 
 }

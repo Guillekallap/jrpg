@@ -1,24 +1,49 @@
 package test;
 
-import org.junit.Assert;
+import java.io.IOException;
+import java.io.StringWriter;
 
-import items.BotaDeBronce;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 import items.EspadaDobleFilo;
 import personajes.Humano;
 import personajes.Personaje;
 
 public class Main {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Personaje pepe = new Humano();
-		// Le agrego una bota
-		pepe = new BotaDeBronce(pepe);
+	public static void main(String[] args) throws IOException, ParseException {
 
-		// agrego espada
+		Personaje pepe = new Humano("Pepe");
 		pepe = new EspadaDobleFilo(pepe);
-		System.out.println(pepe.obtenerPuntosDeAtaque());
+
+		StringWriter out = new StringWriter();
+
+		pepe.writeJSONString(out);
 		
+		System.out.println(out);
+		JSONObject obj = new JSONObject();
+		obj.put("pepe", out);// le pongo pepe pero hace referencia a todos los
+								// personajes guardados en out
+
+		JSONParser parser = new JSONParser();
+		try {
+			JSONObject objPersonajes = (JSONObject) parser.parse(obj.toJSONString());
+			JSONArray array = (JSONArray) objPersonajes.get("pepe");
+			
+			/***for ***/	
+			JSONObject personaje = (JSONObject) array.get(0);
+			String ataque = personaje.get("nombre").toString();
+
+			System.out.println(ataque);
+			/******/	
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Todo mal");
+		}
 	}
 
 }

@@ -14,14 +14,14 @@ public class CastaTest {
 
 	@Test
 	public void probarSoloCasta(){
-		Personaje juan = new Humano();
+		Personaje juan = new Humano("juan");
 		juan.setCasta(new Guerrero());
 		
 		Assert.assertEquals(10+5, juan.obtenerPuntosDeAtaque());
 	}
 	@Test
 	public void castaMasItem(){
-		Personaje juan = new Orco();
+		Personaje juan = new Orco("juan");
 		
 		juan.setCasta(new Asesino());
 		

@@ -2,10 +2,11 @@ package personajes;
 
 public class Elfo extends Personaje {
 
-	public Elfo() {
+	public Elfo(String nom) {
 		this.ataque = 12;
 		this.defensa = 5;
 		this.velocidad = 7;
+		this.nombre =nom;
 	}
 
 	@Override
