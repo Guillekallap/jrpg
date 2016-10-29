@@ -9,13 +9,6 @@ public class BotaDePlata extends Bota{
 		this.defensa=8;
 		this.velocidad=12;
 	}
-	@Override
-	public int obtenerPuntosDeDefensa(){
-		return super.obtenerPuntosDeDefensa()+defensa;
-	}
-	@Override
-	public int obtenerPuntosDeVelocidad(){
-		return super.obtenerPuntosDeVelocidad()+velocidad;
-	}
+	
 	
 }

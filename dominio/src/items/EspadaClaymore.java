@@ -9,8 +9,4 @@ public class EspadaClaymore extends Espada{
 		ataque=22;
 	}
 	
-	@Override
-	public int obtenerPuntosDeAtaque(){
-		return super.obtenerPuntosDeAtaque()+ataque;
-	}
 }

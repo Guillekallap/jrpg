@@ -36,4 +36,20 @@ public class PersonajeEquipado extends Personaje {
 		return this.personajeDecorado.calcularPuntosDeAtaque();
 	}
 
+	@Override
+	public String getNombre() {
+		return personajeDecorado.getNombre();
+	}
+	@Override
+	public int ataqueEspecialCasta() {
+
+		return this.personajeDecorado.ataqueEspecialCasta();
+
+	}
+
+	@Override
+	public int ataqueEspecial() {
+		return this.personajeDecorado.ataqueEspecial();
+	}
+	
 }

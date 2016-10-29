@@ -44,5 +44,8 @@ public class Orco extends Personaje {
 			return this.velocidad;
 	}
 
-
+	@Override
+	public int ataqueEspecial() {
+		return this.obtenerPuntosDeAtaque()*2+this.obtenerPuntosDeDefensa()+this.obtenerPuntosDeVelocidad();
+	}
 }

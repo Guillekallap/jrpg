@@ -8,8 +8,4 @@ public class EspadaMandoble extends Espada{
 		ataque=26;
 	}
 	
-	@Override
-	public int obtenerPuntosDeAtaque(){
-		return super.obtenerPuntosDeAtaque()+ataque;
-	}
 }

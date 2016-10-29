@@ -6,6 +6,7 @@ public abstract class Casta {
 	protected int defensa;
 	protected int ataque;
 
+	public abstract int ataqueEspecial(int ataque);
 	public int getVelocidad() {
 		return velocidad;
 	}

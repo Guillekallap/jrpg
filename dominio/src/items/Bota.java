@@ -10,6 +10,13 @@ public abstract class Bota extends PersonajeEquipado {
 		super(personajeDecorado);
 	}
 
-	
+	@Override
+	public int obtenerPuntosDeDefensa(){
+		return super.obtenerPuntosDeDefensa()+defensa;
+	}
+	@Override
+	public int obtenerPuntosDeVelocidad(){
+		return super.obtenerPuntosDeVelocidad()+velocidad;
+	}
 	
 }

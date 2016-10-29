@@ -7,4 +7,11 @@ public class Asesino extends Casta{
 		defensa = 2;
 		velocidad =2;
 	}
+
+	@Override
+	public int ataqueEspecial(int ataque) {
+		return (int) (Math.random()*(ataque+2))+ataque;
+	}
+	
+	
 }

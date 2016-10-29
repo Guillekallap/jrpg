@@ -5,7 +5,7 @@ public class Elfo extends Personaje {
 	public Elfo(String nom) {
 		this.ataque = 12;
 		this.defensa = 5;
-		this.velocidad = 7;
+		this.velocidad = 10;
 		this.nombre =nom;
 	}
 
@@ -39,6 +39,9 @@ public class Elfo extends Personaje {
 		else
 			return this.velocidad;
 	}
-
+	@Override
+	public int ataqueEspecial() {
+		return this.obtenerPuntosDeAtaque()+this.obtenerPuntosDeDefensa()+this.obtenerPuntosDeVelocidad()*3;
+	}
 	
 }

@@ -14,12 +14,12 @@ public class ItemTest {
 	@Test
 	public void quePuedoAgregarItemBota() {
 		Personaje pepe = new Humano("pepe");
-		Assert.assertEquals(10, pepe.obtenerPuntosDeDefensa());
+		Assert.assertEquals(15, pepe.obtenerPuntosDeDefensa());
 		Assert.assertEquals(5, pepe.obtenerPuntosDeVelocidad());
 
 		// Le agrego una bota
 		pepe = new BotaDeBronce(pepe);
-		Assert.assertEquals(10 + 5, pepe.obtenerPuntosDeDefensa());
+		Assert.assertEquals(15 + 5, pepe.obtenerPuntosDeDefensa());
 		Assert.assertEquals(5 + 10, pepe.obtenerPuntosDeVelocidad());
 
 	}
@@ -29,7 +29,7 @@ public class ItemTest {
 		Personaje pepe = new Humano("pepe");
 		// Le agrego una bota
 		pepe = new BotaDeBronce(pepe);
-		Assert.assertEquals(10 + 5, pepe.obtenerPuntosDeDefensa());
+		Assert.assertEquals(15 + 5, pepe.obtenerPuntosDeDefensa());
 		Assert.assertEquals(5 + 10, pepe.obtenerPuntosDeVelocidad());
 
 		// agrego espada
