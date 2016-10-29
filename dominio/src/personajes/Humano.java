@@ -4,7 +4,7 @@ public class Humano extends Personaje {
 
 	public Humano(String nom) {
 		this.ataque = 10;
-		this.defensa = 10;
+		this.defensa = 15;
 		this.velocidad = 5;
 		this.nombre =nom;
 	}
@@ -40,4 +40,10 @@ public class Humano extends Personaje {
 			return this.velocidad;
 	}
 
+	@Override
+	public int ataqueEspecial() {
+		
+		return this.calcularPuntosDeAtaque()+this.obtenerPuntosDeDefensa()*2+this.obtenerPuntosDeVelocidad();
+	}
+	
 }

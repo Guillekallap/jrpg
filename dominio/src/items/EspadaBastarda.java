@@ -9,8 +9,5 @@ public class EspadaBastarda extends Espada{
 		ataque=20;
 	}
 	
-	@Override
-	public int obtenerPuntosDeAtaque(){
-		return super.obtenerPuntosDeAtaque()+ataque;
-	}
+	
 }

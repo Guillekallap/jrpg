@@ -7,4 +7,10 @@ public class Guerrero extends Casta{
 		defensa = 8;
 		velocidad =2;
 	}
+
+	@Override
+	public int ataqueEspecial(int ataque) {
+		
+		return ataque*2;
+	}
 }
