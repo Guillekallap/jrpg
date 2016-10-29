@@ -32,6 +32,54 @@ public abstract class Personaje implements Atacable, JSONStreamAware {
 		}
 	}
 
+	public int getLvl() {
+		return lvl;
+	}
+
+	public void setLvl(int lvl) {
+		this.lvl = lvl;
+	}
+
+	public int getExperiencia() {
+		return experiencia;
+	}
+
+	public void setExperiencia(int experiencia) {
+		this.experiencia = experiencia;
+	}
+
+	public int getEnergiaMax() {
+		return energiaMax;
+	}
+
+	public void setEnergiaMax(int energiaMax) {
+		this.energiaMax = energiaMax;
+	}
+
+	public int getAtaque() {
+		return ataque;
+	}
+
+	public void setAtaque(int ataque) {
+		this.ataque = ataque;
+	}
+
+	public int getDefensa() {
+		return defensa;
+	}
+
+	public void setDefensa(int defensa) {
+		this.defensa = defensa;
+	}
+
+	public int getVelocidad() {
+		return velocidad;
+	}
+
+	public void setVelocidad(int velocidad) {
+		this.velocidad = velocidad;
+	}
+
 	@Override
 	public void serAtacado(int danio) {
 		danio = this.obtenerPuntosDeDefensa() - danio;
