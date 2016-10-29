@@ -29,8 +29,10 @@ public abstract class Personaje implements Atacable, JSONStreamAware {
 
 	public final void atacar(Atacable atacado) {
 		if (puedeAtacar()) {
-			atacado.serAtacado(calcularPuntosDeAtaque());
-			energia -= calcularPuntosDeAtaque();
+			int ataque=obtenerPuntosDeAtaque();
+			
+			atacado.serAtacado(ataque);
+			restarEnergia(ataque);
 			despuesDeAtacar();
 		}
 	}
@@ -88,7 +90,8 @@ public abstract class Personaje implements Atacable, JSONStreamAware {
 		if (danio > 0)// si el danio es mayor a 0 es que el danio no pudo
 			return;// contra la defenza entonces no baja vida
 		else
-			this.salud -= danio;
+			this.salud += danio;
+		
 	}
 
 	protected void despuesDeAtacar() {
@@ -160,6 +163,9 @@ public abstract class Personaje implements Atacable, JSONStreamAware {
 
 	public void setCasta(Casta casta) {
 		this.casta = casta;
+	}
+	public String getCasta(){
+		return casta.getClass().getSimpleName();
 	}
 
 	public String getNombre() {
