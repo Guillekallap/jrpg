@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 
 
-public class Cliente implements Serializable {
+public class Alumno implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -12,7 +12,7 @@ public class Cliente implements Serializable {
 	private int edad;
 	private int dni;
 
-	public Cliente(String nombre, int edad, int dni) {
+	public Alumno(String nombre, int edad, int dni) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.dni = dni;
